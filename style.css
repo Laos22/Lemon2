@@ -1,0 +1,724 @@
+/* -------------------Общие классы ----------------------*/
+body {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1150px;
+    margin: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+}
+.conteiner {
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* ------------------- Шапка ----------------------*/
+header {
+    width: 100%;
+    height: 85px;
+    border-bottom: 2px solid #E5E5E5;
+}
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+.header_logo {
+    width: 174px;
+    height: 57px;
+}
+.header_contacts {
+    display: flex;
+}
+.header_contacts div {
+    display: flex;
+    align-items: center;
+}
+.header_contacts div img {
+    margin-right: 10px;
+}
+.header_contacts div span {
+    margin-right: 70px;
+}
+.header_contacts div:last-child span {
+    margin-right: 0px;
+}
+/* ------------------- Меню ----------------------*/
+nav {
+    width: 100%;
+    height: 70px;
+}
+nav .conteiner{
+    display: flex;
+    align-items: center;
+}
+.nav_item {
+    padding-right: 90px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+}
+#owners {
+    text-decoration: none;
+    padding: 8px 50px;
+    border: 1px solid #909090;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 170px;
+    height: 35px;
+}
+nav button {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin-left: 35px;
+    border: 0;
+    background: white;
+}
+/* ------------------- Главный блок ----------------------*/
+.main_div {
+    width: 100%;
+    height: 640px;
+    background: linear-gradient(to top, transparent, black 100%, #4F4F4F 100%, #F9F9F9 100%, #FFFFFF 100%),
+      url("img/header_bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_title {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 0;
+    margin-top: 170px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.main_button {
+    width: 270px;
+    padding: 15px 0;
+    background: #FEE600;
+    margin-top: 65px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    box-sizing: border-box;
+}
+/* ----------------- Цытата ----------------------- */
+.quote_div {
+    height: 200px;
+    background: #FAF9F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote_div q {
+    width: 800px;
+    height: 80px;
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 40px;
+    color: #495F1D;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.quote_div span {
+    line-height: 18px;
+    color: #333333;
+}
+/* ----------------- ABOUT US ----------------------- */
+.about_div {
+    width: 100%;
+    height: 700px;
+    background: white;
+}
+.about_div .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;  
+}
+.title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #495F1D;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.about_text {
+    width: 805px;
+    height: 120px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about_perks{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.perk_block {
+    width: 370px;
+    height: 300px;
+    background: #FAF9F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perc_icon {
+    margin-top: 31px;
+    margin-bottom: 32px;
+    width: 60px;
+    height: 60px;
+}
+.service {
+    background-image: url("img/about/perc1y.svg");
+}
+.planning {
+    background-image: url("img/about/perc2y.svg");
+}
+.competen {
+    background-image: url("img/about/perc3y.svg");
+}
+.perc_title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    color: #495F1D;
+    margin-bottom: 12px;
+}
+.perk_block span {
+    width: 264px;
+    height: 96px;
+    text-align: center;
+}
+/* -- HOVER ABAUT US -- */
+.perk_block:hover {
+    width: 370px;
+    height: 300px;
+    background: #FEE600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perk_block:hover .service {
+    background-image: url("img/about/perc1w.svg");
+}
+.perk_block:hover .planning {
+    background-image: url("img/about/perc2w.svg");
+}
+.perk_block:hover .competen {
+    background-image: url("img/about/perc3w.svg");
+}
+.perk_block:hover .perc_title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    color: #495F1D;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.perk_block:hover span {
+    width: 311px;
+    height: 72px;
+    text-align: center;
+}
+/* ----------------- MISSION --------------------- */
+.mission_div {
+    width: 100%;
+    height: 750px;
+    position: relative;
+    /* background: #FAF9F5;
+    background-image: url(img/missionImg.png);
+    background-size: 50% 750px;
+    background-position: right;
+    background-repeat: no-repeat; */
+}
+.mission_main {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+.mission_div .conteiner {
+    margin-top: 143px;
+    background-image: url(img/logoLemon.png);
+    background-repeat: no-repeat;
+    background-size: 472px 482px;
+    background-position: 52% 0%;
+}
+.mission_content {
+    display: flex;
+    flex-direction: column;
+}
+.mission_content .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.mission_description {
+    width: 473px;
+    height: 264px;
+}
+.logo_lemon_bg {
+    width: 475px;
+    height: 482px;
+}
+/* ------ */
+.mission_bg {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.mission_bg div:first-child {
+width: 50%;
+background: #FAF9F5;
+}
+.mission_bg div:last-child {
+    width: 50%;
+    background-image: url(img/missionImg.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.mission_content .main_button {
+    margin-top: 16px;
+    background: none;
+    text-align: left;
+}
+.mission_content .main_button:hover {
+    background: #FEE600;
+    padding: 14px 86px;
+    margin-top: 34px;
+}
+/* ---------------------- STORIES ----------------------------- */
+.storie_div {
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+.stories_main {
+    width: 100%;
+    position: absolute;
+}
+.stories_bg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    position: absolute;
+}
+.stories_bg div:first-child {
+    width: 50%;
+    background-image: url(img/storiesImg.png);
+    background-repeat: no-repeat;
+}
+.stories_bg div:last-child {
+    width: 50%;
+    background: #FAF9F5;
+    background-image: url(img/logoLemon.png);
+    background-repeat: no-repeat;
+    background-size: 472px 482px;
+    background-position: 702px 491px;
+
+}
+.stories_content {
+    width: 535px;
+    height: 486px;
+    float: right;
+}
+.stories_content .title {
+    margin-top: 143px;
+    margin-bottom: 39px;
+}
+.stories_content .main_button {
+    margin-top: 16px;
+    background: none;
+}
+.stories_content .main_button:hover {
+    background: #FEE600;
+    padding: 14px 86px;
+    margin-top: 34px;
+}
+/* ------------ CUSTOMER --------------------- */
+.customers_div {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.customer_background {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    background-image: 
+    /* linear-gradient(to left, transparent -100%, black 200%), */
+    url(img/customer_bg2.png);
+    background-repeat: no-repeat;
+
+}
+.customer_main {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+.customer_logo {
+    width: 193px;
+    height: 195px;
+    margin: 108px 115px;
+    background-image: url(img/customer_logo.png);
+}
+.customer_logo p {
+    width: 100%;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 133px;
+    color: #FEE600;
+    margin: 0;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 1px;
+}
+.cust_inf_logo {
+    display: block;
+    color: white;
+    margin-top: 15px;
+    margin-left: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+/* ---------------- NEWS ----------------------- */
+.news_section {
+    width: 100%;
+    height: 750px;
+}
+.news_section .title {
+    text-align: center;
+    margin: 50px 0px;
+}
+.news_main {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.news_item_block {
+    width: 370px;
+    height: 520px;
+    background: #FAF9F5;
+    display: flex;
+    flex-direction: column;
+}
+.news_item_block img {
+    width: 370px;
+    height: 250px;
+}
+.news_name {
+    margin-top: 17px;
+    margin-left: 35px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #4F4F4F;
+}
+.news_data {
+    margin-left: 35px;
+    margin-top: 7px;
+    color: #BDBDBD;
+}
+.news_item_block p {
+    width: 304px;
+    height: 120px;
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 35px;
+    overflow: auto;
+}
+.news_item_block a {
+    width: 84px;
+    height: 24px;
+    margin-top: 29px;
+    margin-left: 269px;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+.news_item_block a img {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+/* ------------ Testimonials ----------------- */
+.testimonials_div {
+    width: 100%;
+    height: 700px;
+    background: #FAF9F5;
+    background-image: url(img/testimonials_bg.png);
+    background-repeat: no-repeat;
+    background-position: 229px 120px;
+}
+.testimonials_div .conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials_div .title {
+    margin-top: 289px;
+}
+.testimonials_slider {
+    margin-top: 94px;
+    width: 770px;
+    height: 474px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.slider_item_block {
+    width: 370px;
+    height: 474px;
+    background: white;
+    padding: 31px 34px;
+    box-sizing: border-box;
+}
+.slider_item_block img {
+    width: 120px;
+    height: 120px;
+}
+.slider_item_block h3 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 26px;
+}
+.slider_item_block p {
+    width: 301px;
+    height: 168px;
+    overflow: auto;
+}
+.slider_item_block span {
+    font-weight: 700;
+}
+/* ------------------- ASKED --------------- */
+.asked_div {
+    width: 100%;
+    height: 750px;
+    background: white;
+    background-image: url(img/asked_bg.png);
+    background-size: 48% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.asked_main {
+    width: 569px;
+    height: 100%;
+    /* border: 1px solid; */
+    float: right;
+    box-sizing: border-box;
+    padding-right: 5px;
+}
+.asked_main .title {
+    margin-top: 81px;
+    margin-bottom: 56px;
+}
+.asked_item {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.asked_description {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 11px;
+    background: #FAF9F5;
+    box-sizing: border-box;
+    padding: 23px;
+}
+/* -------------- SUBSCRIBLE -------------- */
+.subscrible {
+    width: 100%;
+    height: 400px;
+    background: #FAF9F5;
+}
+.subscrible .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscrible .title {
+    margin-top: 68px;
+    margin-bottom: 9px;
+
+}
+.subscrible .form {
+    margin-top: 73px;
+    width: 100%;
+    height: 45px;
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+.subscrible .conteiner span:last-child {
+    color: #909090;
+    margin-top: 41px;
+}
+input {
+    width: 270px;
+    height: 45px;
+    border: 1px solid #E7E7E7;
+    background-repeat: no-repeat;
+    background-position: 17px 12px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    
+}
+input[type=name] {
+    background-image: url(img/user1.svg);
+}
+input[type=email] {
+    background-image: url(img/email1.svg);
+}
+.form button {
+    width: 270px;
+    height: 45px;
+    background: #FEE600;
+    border: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+/* ----------- FOOTER --------------------- */
+footer {
+    width: 100%;
+    height: 409px;
+    background: #EFEED9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .conteiner {
+    display: flex;
+
+}
+.footer_logo_block {
+    width: 340px;
+}
+.footer_logo_block img {
+    margin-top: 62px;
+}
+.footer_logo_block div {
+    display: flex;
+    align-items: center;
+}
+.footer_logo_block div span {
+    margin-right: 32px;
+    font-family: 'Playfair Display';
+    color: #495F1D;
+}
+.footer_logo_block div img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+.footer_links {
+    width: 302px;
+    margin-left: 62px;
+    margin-top: 79px;
+}
+.footer_title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #495F1D;
+}
+.footer_nav {
+    margin-top: 29px;
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer_nav .nav_item {
+    width: 150px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.footer_nav #owners {
+    width: 100px;
+    padding: 8px 16px;
+    text-align: center;
+}
+.footer_contacts .footer_title {
+    margin-left: 0;
+}
+.footer_contacts {
+    margin-top: 79px;
+    width: 286px;
+    height: 200px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_contacts div {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.footer_contacts div span {
+    margin-left: 15px;
+}
+small {
+    margin-bottom: 37px;
+}
