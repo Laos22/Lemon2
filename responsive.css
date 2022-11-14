@@ -1,10 +1,890 @@
-/* @media (max-width: 1190px) {
+@media (max-width: 1279px) {
+    .wrapper {
+        max-width: 1280px;
+        min-width: 1024px;
+        margin: 0 auto;
+    }
     .conteiner {
-        box-sizing: border-box;
-        padding-left: 30px;
-        padding-right: 30px;
+        width: 960px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    /* ------------------- Шапка ----------------------*/
+    .header_contacts div span {
+        margin-right: 40px;
+    }
+    /* ------------------- Меню ----------------------*/
+    .nav_item {
+        padding-right: 60px;
+    }
+    /* ------------------- Главный блок ----------------------*/
+    .main_div {
+        width: 100%;
+        height: 640px;
+    }
+
+    /* ----------------- ABOUT US ----------------------- */
+    .perk_block {
+        width: 300px;
+    }
+    .perk_block:hover {
+        width: 300px;
+    }
+    .perk_block span {
+        width: 270px;
+    }
+    .perk_block:hover span {
+        width: 270px;
+    }
+    /* ----------------- MISSION --------------------- */
+    .mission_description {
+        width: 423px;
+        height: 264px;
+    }
+    /* ---------------------- STORIES ----------------------------- */
+    .stories_content {
+        width: 450px;  
+    }
+    /* ------------ CUSTOMER --------------------- */
+    .customers_div .conteiner {
+        width: 100%;
+    }
+    .customer_main > div {
+        width: 100%;
+    }
+    /* ---------------- NEWS ----------------------- */
+    .news_item_block {
+        width: 300px;
+    }
+    .news_item_block a {
+        margin-left: 210px;
+    }
+    /* ------------ Testimonials ----------------- */
+    .testimonials_div .conteiner {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .testimonials_div .title {
+       margin: 0;
+    }
+    .testimonials_slider {
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    /* ------------------- ASKED --------------- */
+    .asked_main {
+        width: 450px;
+        padding-right: 15px;
+    }
+    .asked_description {
+        height: 80px;
+        margin-bottom: 10px;
+        padding: 18px;
+    }
+    /* -------------- SUBSCRIBLE -------------- */
+    input {
+        width: 220px;
+    }
+    .form button {
+        width: 220px;
+    }
+}
+/* ------------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+    /* -------------------Общие классы ----------------------*/
+    body {
+        font-size: 12px;
+    }
+    .wrapper {
+        max-width: 1024px;
+        min-width: 768px;
+        margin: 0 auto;
+    }
+    .conteiner {
+        width: 720px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    /* ------------------- Шапка ----------------------*/
+    header {
+        height: 55px;
+    }
+    header .conteiner {
+        font-size: 11px;
+    }
+    .header_logo {
+        width: 130px;
+        height: auto;
+    }
+    .header_contacts div img {
+        margin: 10px;
+    }
+    .header_contacts div span {
+        white-space: nowrap;
+        margin: 3px;
+    }
+    .header_contacts div:last-child span {
+        margin-right: 0px;
+    }
+    /* ------------------- Меню ----------------------*/
+    nav {
+        height: 40px;
     }
     .nav_item {
-        padding-right: 80px;
+        font-size: 11px;
+        white-space: nowrap;
     }
-} */
+    #owners {
+        padding: 5px;
+        font-size: 11px;
+        /* box-sizing: border-box; */
+        width: auto;
+        height: 25px;
+        margin-left: -20px;
+    }
+    nav button {
+        width: 20px;
+        height: auto;
+        margin-left: 20px;
+    }
+    /* ------------------- Главный блок ----------------------*/
+    .main_div {
+        width: 100%;
+        height: 500px;
+    }
+    .main_title {
+        margin-top: 100px;
+        font-size: 50px;
+
+    }
+    /* ----------------- Цытата ----------------------- */
+    .quote_div {
+        height: 200px;
+        background: #FAF9F5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote_div q {
+        width: 500px;
+        font-size: 20px;
+    }
+    .quote_div span {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    /* ----------------- ABOUT US ----------------------- */
+    .about_div {
+        height: 600px;
+    }
+    .about_div .title {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .about_text {
+        font-size: 12px;
+        width: 700px;
+        margin-bottom: 30px;
+    }
+    .perk_block {
+        width: 230px;
+    }
+    .perc_icon {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .perc_title {
+        margin-bottom: 10px;
+    }
+    .perk_block span {
+        width: 215px;
+        height: 140px;
+    }
+    .perk_block:hover {
+        width: 235px;
+        height: 310px;
+    }
+    .perk_block:hover .perc_title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .perk_block:hover span {
+        width: 215px;
+        height: 140px;
+    }
+    /* ----------------- MISSION --------------------- */
+    .mission_div {
+        height: 450px;
+    }
+    .mission_main {
+        height: 450px;
+    }
+    .mission_div .conteiner {
+        margin-top: 20px;
+        background-size: 235px 238px;
+        background-position: 52% 50%;
+    }
+    .mission_content .title {
+        margin-top: 0;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    .mission_description {
+        width: 330px;
+        height: auto;
+        line-height: 20px;
+        text-align: justify;
+    }
+    /* ------ */
+    .mission_bg {
+        height: 450px;
+    }
+    .mission_bg div:last-child {
+        height: 450px;
+        background-size: cover;
+    }
+    .mission_content .main_button {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    /* ---------------------- STORIES ----------------------------- */
+    .storie_div {
+        height: 450px;
+    }
+    .stories_main {
+        height: 450px;
+    }
+    .stories_bg {
+        height: 450px;
+    }
+    .stories_bg div:first-child {
+        height: 450px;
+        background-size: cover;
+    }
+    .stories_bg div:last-child {
+        width: 50%;
+        height: 450px;
+        background: #FAF9F5;
+        background-image: url(img/logoLemon.png);
+        background-repeat: no-repeat;
+        background-size: 235px 239px;
+        background-position: 390px 270px;
+
+    }
+    .stories_content {
+        width: 340px;
+        height: 440px;
+        float: right;
+        line-height: 20px;
+        text-align: justify;
+        /* overflow: auto; */
+    }
+    .stories_content .title {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    .stories_content .main_button {
+        width: 100px;
+        margin-top: 15px;
+        background: none;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    /* ------------ CUSTOMER --------------------- */
+    .customers_div .conteiner {
+        width: 100%;
+    }
+    .customers_div {
+        height: 300px;
+    }
+    
+    .customer_background {
+        height: 300px;
+    }
+    .customer_main {
+        height: 300px;
+    }
+    .customer_main > div {
+        width: 100%;
+    }
+    .customer_logo {
+        width: 120px;
+        height: 120px;
+        background-image: url(img/customer_logo.png);
+        background-size: cover;
+    }
+    .customer_logo p {
+        font-size: 60px;
+        text-align: right;
+        margin-top: 5px;
+        margin-right: 1px;
+    }
+    .cust_inf_logo {
+        margin-top: -20px;
+        margin-left: 50%;
+        font-size: 10px;
+    }
+    /* ---------------- NEWS ----------------------- */
+    .news_section {
+        height: 600px;
+    }
+    .news_section .title {
+        margin: 20px 0px;
+    }
+    .news_item_block {
+        width: 230px;
+        height: 450px;
+    }
+    .news_name {
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .news_data {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .news_item_block p {
+        margin-left: 20px;
+    }
+    .news_item_block a {
+        margin-top: 0px;
+        margin-left: 150px;
+        font-size: 10px;
+    }
+    /* ------------ Testimonials ----------------- */
+    .testimonials_div {
+        height: 650px;
+    }
+    .testimonials_div .conteiner {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .testimonials_div .title {
+       margin: 0;
+       font-size: 25px;
+    }
+    .testimonials_slider {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .slider_item_block {
+        width: 350px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .slider_item_block img {
+        width: 100px;
+        height: 100px;
+    }
+    .slider_item_block h3 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .slider_item_block p {
+        width: 100%;
+        height: 225px;
+        overflow: auto;
+    }
+    .slider_item_block span {
+        font-weight: 700;
+    }
+    /* ------------------- ASKED --------------- */
+    .asked_div {
+        height: 350px;
+        background-size: 40% 100%;
+    }
+    .asked_main {
+        width: 420px;
+    }
+    .asked_main .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .asked_description {
+        height: 50px;
+        padding: 15px;
+    }
+    /* -------------- SUBSCRIBLE -------------- */
+    .subscrible {
+        height: 400px;
+    }
+    .subscrible .title {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    
+    }
+    .subscrible .form {
+        margin-top: 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        margin: 5px;
+    }
+    .subscrible .conteiner span:last-child {
+        margin-top: 20px;
+    }
+    /* ----------- FOOTER --------------------- */
+    footer {
+        height: 409px;
+    }
+    footer .conteiner {
+        align-items: center;
+    }
+    .footer_logo_block {
+        width: 200px;
+    }
+    .footer_logo_block img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    .footer_logo_block p {
+        line-height: 18px;
+    }
+    .footer_logo_block div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_logo_block div span {
+        margin-right: 0px;
+        font-family: 'Playfair Display';
+        color: #495F1D;
+        white-space: nowrap;
+    }
+    .footer_logo_block div img {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+     /* --------------------- */
+    .footer_links {
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .footer_title {
+        font-size: 15px;
+        line-height: 27px;
+        color: #495F1D;
+    }
+    .footer_nav {
+        margin-top: 29px;
+        width: 200px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer_nav .nav_item {
+        width: 80px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .footer_nav #owners {
+        width: 100px;
+        padding: 8px 16px;
+        text-align: center;
+    }
+    /* ------------ */
+    .footer_contacts .footer_title {
+        margin-left: 0;
+    }
+    .footer_contacts {
+        margin-top: 0px;
+        width: 200px;
+        height: 200px;
+        margin-left: 0px;
+    }
+    .footer_contacts div {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .footer_contacts div span {
+        margin-left: 15px;
+    }
+    small {
+        margin-bottom: 37px;
+    }
+}
+/* ------------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* -------------------Общие классы ----------------------*/
+    body {
+        font-size: 13px;
+    }
+    .wrapper {
+        max-width: 767px;
+        min-width: 375px;
+        margin: 0 auto;
+    }
+    .conteiner {
+        width: 80%;
+    }
+    /* ------------------- Шапка ----------------------*/
+    header {
+        height: 40px;
+    }
+    .header_logo {
+        display: none;
+    }
+    .header_contacts {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header_contacts div:first-child {
+        display: none;
+    }
+    /* ------------------- Меню ----------------------*/
+    nav .conteiner a, nav .conteiner > button {
+        display: none;
+    }
+    .nav_mobaile {
+        width: 100%;
+        height: 100%;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 2px 0;
+    }
+    .nav_mobaile img {
+        height: 100%;
+        width: auto;
+    }
+    .nav_mobaile button {
+        height: 100%;
+        width: 100%;
+    }
+    .nav_mobaile button {
+        height: 80%;
+        width: auto;
+    }
+    /* ------------------- Главный блок ----------------------*/
+    .main_div {
+        width: 100%;
+        height: 695px;
+        background:
+          url("img/main_bg_mobile.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_title {
+        margin-bottom: 0;
+        margin-top: 233px;
+        font-size: 33px;
+        line-height: 44px;
+    }
+    .main_button {
+        width: 240px;
+        height: 50px;
+    }
+    /* ----------------- Цытата ----------------------- */
+    .quote_div {
+        height: 160px;
+    }
+    .quote_div q {
+        width: 80%;
+        height: auto;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .quote_div span {
+        font-size: 10px;
+    }
+    /* ----------------- ABOUT US ----------------------- */
+    .about_div {
+        height: auto;
+    }
+    .about_div .conteiner {
+        margin-bottom: 15px;  
+    }
+    .about_div .title {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .about_text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .about_text br:first-child {
+        display: none;
+    }
+    .about_perks{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .perk_block {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+    .perc_icon {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    .perc_title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .perk_block span {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 11px;
+    }
+    .perk_block:hover {
+        width: 100%;
+        height: auto;
+    }
+    .perk_block:hover .perc_title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .perk_block:hover span {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    /* ----------------- MISSION --------------------- */
+    .mission_bg {
+        width: 100%;
+        height: 100%;
+    }
+    .mission_bg div:first-child {
+    width: 100%;
+    }
+    .mission_bg div:last-child {
+       display: none;
+    }
+    .mission_div {
+        height: 400px;
+    }
+    .mission_main {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+    }
+    .mission_div .conteiner {
+        margin-top: 0px;
+        background-size:  70% auto;
+        background-position: 50% 50%;
+    }
+    .mission_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .mission_content .title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .mission_description {
+        width: 100%;
+        height: auto;
+    }
+    .logo_lemon_bg {
+        width: 475px;
+        height: 482px;
+    }
+    /* ---------------------- STORIES ----------------------------- */
+    .storie_div {
+        height: 600px;
+    }
+    .stories_bg {
+        height: 600px;
+    }
+    .stories_bg div:first-child {
+        display: none;
+    }
+    .stories_bg div:last-child {
+        width: 100%;
+        height: 100%;
+        background-size:  70% auto;
+        background-position: 50% 50%;
+    
+    }
+    .stories_content {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .stories_content .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .stories_content .main_button {
+        width: 100px;
+        margin-top: 16px;
+        background: none;
+    }
+    /* ------------ CUSTOMER --------------------- */
+    .customers_div {
+        display: none;
+    }
+    /* ---------------- NEWS ----------------------- */
+    .news_section {
+        height: auto;
+    }
+    .news_section .title {
+        margin: 10px 0px;
+    }
+    .news_main {
+        width: 100%;
+        flex-direction: column;
+    }
+    .news_item_block {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .news_item_block:first-child {
+        display: block;
+    }
+    .news_name {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .news_data {
+        margin-left: 20px;
+        margin-top: 7px;
+    }
+    .news_item_block p {
+        width: 90%;
+        height: 70%;
+        margin-top: 6px;
+        margin-left: 20px;
+
+    }
+    .news_item_block a {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    /* ------------ Testimonials ----------------- */
+    .slider_item_block {
+        height: 420px;
+    }
+    .slider_item_block:last-child {
+        display: none;
+    }
+    .slider_item_block:first-child {
+        margin: auto;
+    }
+    .slider_item_block p {
+        height: 170px;
+    }
+    /* ------------------- ASKED --------------- */
+    .asked_div {
+        height: auto;
+        background-image: none;
+    }
+    .asked_main {
+        width: 100%;
+        height: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .asked_main .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-sizing: 15px;
+        text-align: center;
+        line-height: 26px;
+    }
+    .asked_item {
+        width: 100%;
+        height: 100%;
+        font-size: 11px;
+    }
+    .asked_description {
+        height: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    /* -------------- SUBSCRIBLE -------------- */
+    .subscrible .title {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .subscrible .conteiner span {
+        font-size: 12px;
+        text-align: center;
+    }
+    /* ----------- FOOTER --------------------- */
+    footer {
+        height: auto;
+    }
+    .footer_logo_block p {
+        display: none;
+    }
+    footer .conteiner {
+        flex-direction: column;
+    }
+    .footer_links {
+        display: none;
+    }
+    .footer_contacts .footer_title {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer_contacts {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .footer_contacts > div {
+        margin: 5px 0;
+    }
+
+
+    
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */ 
+
+}

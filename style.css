@@ -1,8 +1,7 @@
 /* -------------------Общие классы ----------------------*/
 body {
     width: 100%;
-    max-width: 1920px;
-    min-width: 1150px;
+    padding: 0;
     margin: 0;
     font-family: 'Raleway';
     font-style: normal;
@@ -10,6 +9,11 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #333333;
+}
+.wrapper {
+    max-width: 1920px;
+    min-width: 1180px;
+    margin: 0 auto;
 }
 .conteiner {
     width: 1150px;
@@ -36,6 +40,10 @@ header .conteiner {
     width: 174px;
     height: 57px;
 }
+.header_logo img {
+    width: 100%;
+    height: auto;
+}
 .header_contacts {
     display: flex;
 }
@@ -60,6 +68,9 @@ nav {
 nav .conteiner{
     display: flex;
     align-items: center;
+}
+.nav_mobaile {
+    display: none;
 }
 .nav_item {
     padding-right: 90px;
@@ -223,9 +234,11 @@ nav button {
     margin-bottom: 12px;
 }
 .perk_block span {
-    width: 264px;
-    height: 96px;
+    width: 300px;
+    height: 120px;
+    /* margin-bottom: 20px; */
     text-align: center;
+    overflow: auto;
 }
 /* -- HOVER ABAUT US -- */
 .perk_block:hover {
@@ -254,20 +267,17 @@ nav button {
     text-transform: uppercase;
 }
 .perk_block:hover span {
-    width: 311px;
-    height: 72px;
+    width: 320px;
+    height: 120px;
+    margin-bottom: 20px;
     text-align: center;
+    overflow: auto;
 }
 /* ----------------- MISSION --------------------- */
 .mission_div {
     width: 100%;
     height: 750px;
     position: relative;
-    /* background: #FAF9F5;
-    background-image: url(img/missionImg.png);
-    background-size: 50% 750px;
-    background-position: right;
-    background-repeat: no-repeat; */
 }
 .mission_main {
     position: absolute;
@@ -316,15 +326,16 @@ background: #FAF9F5;
     z-index: 2;
 }
 .mission_content .main_button {
+    width: 100px;
     margin-top: 16px;
     background: none;
     text-align: left;
 }
-.mission_content .main_button:hover {
+/* .mission_content .main_button:hover {
     background: #FEE600;
     padding: 14px 86px;
     margin-top: 34px;
-}
+} */
 /* ---------------------- STORIES ----------------------------- */
 .storie_div {
     width: 100%;
@@ -344,8 +355,10 @@ background: #FAF9F5;
 }
 .stories_bg div:first-child {
     width: 50%;
+    height: auto;
     background-image: url(img/storiesImg.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .stories_bg div:last-child {
     width: 50%;
@@ -366,20 +379,22 @@ background: #FAF9F5;
     margin-bottom: 39px;
 }
 .stories_content .main_button {
+    width: 100px;
     margin-top: 16px;
     background: none;
 }
-.stories_content .main_button:hover {
+/* .stories_content .main_button:hover {
     background: #FEE600;
     padding: 14px 86px;
     margin-top: 34px;
-}
+} */
 /* ------------ CUSTOMER --------------------- */
 .customers_div {
     width: 100%;
     height: 450px;
     position: relative;
 }
+
 .customer_background {
     width: 100%;
     height: 450px;
@@ -394,14 +409,18 @@ background: #FAF9F5;
     width: 100%;
     height: 450px;
     position: absolute;
+}
+.customer_main > div {
+    width: 70%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
 }
 .customer_logo {
     width: 193px;
     height: 195px;
-    margin: 108px 115px;
     background-image: url(img/customer_logo.png);
 }
 .customer_logo p {
@@ -449,8 +468,8 @@ background: #FAF9F5;
     flex-direction: column;
 }
 .news_item_block img {
-    width: 370px;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 .news_name {
     margin-top: 17px;
@@ -465,8 +484,8 @@ background: #FAF9F5;
     color: #BDBDBD;
 }
 .news_item_block p {
-    width: 304px;
-    height: 120px;
+    width: 80%;
+    height: 70%;
     margin: 0;
     margin-top: 6px;
     margin-left: 35px;
@@ -648,7 +667,7 @@ footer {
 }
 footer .conteiner {
     display: flex;
-
+    justify-content: space-between;
 }
 .footer_logo_block {
     width: 340px;
